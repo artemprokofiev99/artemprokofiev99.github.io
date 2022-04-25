@@ -1,0 +1,212 @@
+*{
+    font-family: Roboto;
+}
+header{
+    position: relative;
+}
+nav{
+    height: 52px;
+    background: #212121;
+    position: fixed;
+    width: 100%;
+    top:0;
+    z-index: 2;
+
+}
+.menu_s { 
+    padding: 14px 70px; /*изначально здесь было 10px по макету но у нас образавалось полоса изза недостатака высоты блока .menu_s поэтому мы добавили ему падингов чтобы вырованять нашы блоки*/
+    margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+.menu_s .menu_link{
+    font-family: Roboto-Light;
+    font-style: normal;
+    font-size: 15px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.menu_s .menu_item{
+    border-right: 2px dotted palevioletred;
+    padding-right: 36px;
+}
+.subheader{
+    height: 87px;
+    width: 100%;
+    background: rgba(0,0,0,0.6);
+    /* opacity:0.6 ; указывет насколько элементы будут прозрачными в отличии от background которому можно задать прозрачность, здесь применяется ко всем элементам в селекторе */
+    position: absolute;
+    width: 100%;  /*1-ый способ задвинуть фон под фон полупрозрачного .subheader только не забыть поставить у родителя position:relative*/
+}
+.subheader .text_logo{
+    font-weight: 100;
+    font-size: 13px;
+    color: #FFFFFF;
+    margin-top: 6px;
+
+}
+.subheader_logo{
+    max-width: 100%; /* это для того чтобы если поменяется логотип он будет в ширине нащей колонки */
+    display: block; /* чтобы заработли msargin ведь ссылка это строчный элемент */
+    margin-top: 16px;
+}
+.subheader .subheader_call{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    text-align: right;
+    color: #FFFFFF;
+    margin-top: 19px;
+}
+.subheader .subheader_phone {
+    display: block;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    color: #FFFFFF;
+    text-decoration: none;
+    text-align: right;
+    margin-top: 8px;
+    line-height: 12px; /*здесь используем примерно на вскидку line-height 12пикселей чтобы выровнять нашу ссылку */
+}
+.subheader button{
+    width: 172px;
+    height: 46px;
+    margin: 19px 0;
+    background: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%);
+    box-shadow: inset 0px -3px 0px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: #FFFFFF;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21);
+    border: none;
+}
+.promo{
+    background-color: aqua;
+    min-height: 800px;
+    background: url(../img/uber_bg.jpg) center center/cover no-repeat;
+    padding: 150px 0 135px 0;
+    margin-top: 52px; /*отступ в размере высоты нашего меню nav, чтобы фиксированое меню не заежало на секцию*/
+    z-index: 1;
+}
+.promo .promo_header{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 60px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    line-height: 60px;
+    margin: 0;
+}
+.promo .promo_subheader{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    line-height: 36px;
+    margin-top: 22px;
+    margin-bottom: 0;
+}
+.promo .promo_descr1{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 23px;
+}
+.promo .promo_btn{
+    display: block;
+    margin: 0 auto; /*помним кнопка это блочно-строчный элемент поэтому чтобы поставить по центру нужно придать ей display:block*/
+    width: 259px;
+    height: 63px;
+    margin-top: 120px;
+    background: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%);
+    box-shadow: inset 0px -3px 0px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: #FFFFFF;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21);
+    border: none;
+}
+.waiting{
+    min-height: 900px;
+    padding: 71px 0 65px 0;
+}
+.waiting .col-md-6{
+    margin-top: 40px;
+}
+.mini_title{
+    height: 24px;
+    width: 112px;
+    margin: 0 auto;
+    background-color: #000;
+    color: #FFF;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 24px;
+
+}
+.waiting_header{
+    margin: 0;
+    margin-top: 38px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 38px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #222222;
+}
+.waiting .waiting_punkt1{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+.waiting .waiting_punkt1 .waiting_text{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 17px;
+    margin-left: 26px;
+    width: 371px;
+    height: 150px;
+}
+.waiting .waiting_punkt1 .waiting_text h3{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 21px;
+    color: #1EACC7;
+}
+.waiting .waiting_iconsform{
+    height: 113px;
+    width: 113px;
+    background-color: #1eacc7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:50%;
+}

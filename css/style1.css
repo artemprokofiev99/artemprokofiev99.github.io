@@ -1,0 +1,45 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?hmsl1z');
+  src:  url('fonts/icomoon.eot?hmsl1z#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?hmsl1z') format('truetype'),
+    url('fonts/icomoon.woff?hmsl1z') format('woff'),
+    url('fonts/icomoon.svg?hmsl1z#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-appsgooglegoogleplaylogoplaysocialsocialmedia-115686_115615 .path1:before {
+  content: "\e906";
+  color: rgb(34, 153, 248);
+}
+.icon-appsgooglegoogleplaylogoplaysocialsocialmedia-115686_115615 .path2:before {
+  content: "\e907";
+  margin-left: -1em;
+  color: rgb(255, 193, 7);
+}
+.icon-appsgooglegoogleplaylogoplaysocialsocialmedia-115686_115615 .path3:before {
+  content: "\e908";
+  margin-left: -1em;
+  color: rgb(90, 207, 95);
+}
+.icon-appsgooglegoogleplaylogoplaysocialsocialmedia-115686_115615 .path4:before {
+  content: "\e909";
+  margin-left: -1em;
+  color: rgb(248, 68, 55);
+}
